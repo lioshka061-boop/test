@@ -1,0 +1,86 @@
+.step-card,
+.template-card,
+.format-card,
+.demo-card,
+.case-card,
+.pricing-card,
+.faq-item,
+.cta-card {
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.step-card::after,
+.template-card::after,
+.pricing-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(70, 78, 235, 0.08), rgba(85, 150, 254, 0.05));
+  opacity: 0;
+  transition: opacity 0.4s var(--cubic);
+  z-index: -1;
+}
+
+.step-card:hover::after,
+.template-card:hover::after,
+.pricing-card:hover::after {
+  opacity: 1;
+}
+
+.case-card {
+  min-height: 160px;
+}
+
+.demo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero__stats li,
+.case-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+}
+
+.hero__stats li {
+  padding: 1rem 1.2rem;
+}
+
+.hero__stats li:hover,
+.template-card:hover,
+.step-card:hover,
+.case-card:hover {
+  box-shadow: 0 30px 60px rgba(15, 20, 34, 0.55);
+}
+
+.templates-grid article,
+.steps-grid article,
+.cases-grid article {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.faq-item .icon {
+  font-size: 1.2rem;
+  color: var(--accent-2);
+}
+
+.hero__copy,
+.template-card,
+.case-card,
+.pricing-card,
+.format-card,
+.demo-card,
+.faq-item {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)), var(--gradient-hero);
+  background-blend-mode: screen;
+}
+
+.hero__copy {
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+}

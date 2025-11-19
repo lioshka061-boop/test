@@ -1,0 +1,33 @@
+:root {
+  --font-display: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --accent-1: #464eeb;
+  --accent-2: #5596fe;
+  --dark-bg: #0a0f1a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --text-primary: #f5f7ff;
+  --text-secondary: rgba(255, 255, 255, 0.78);
+  --text-muted: rgba(255, 255, 255, 0.56);
+  --border-color: rgba(255, 255, 255, 0.12);
+  --shadow-lg: 0 30px 90px rgba(6, 9, 21, 0.8);
+  --shadow-md: 0 20px 45px rgba(10, 15, 26, 0.65);
+  --shadow-soft: 0 10px 35px rgba(13, 18, 30, 0.5);
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --container-width: min(1200px, 92vw);
+  --gradient-main: linear-gradient(120deg, var(--accent-1), var(--accent-2));
+  --gradient-btn: linear-gradient(135deg, #464eeb 0%, #5c7aff 35%, #5596fe 70%, #68d5ff 100%);
+  --gradient-btn-hover: linear-gradient(135deg, #7a5dff 0%, #5596fe 40%, #63f0ff 100%);
+  --btn-border: rgba(173, 203, 255, 0.3);
+  --gradient-hero: radial-gradient(circle at 20% -10%, rgba(52, 72, 255, 0.35), transparent 45%), radial-gradient(circle at 80% 0%, rgba(71, 11, 108, 0.4), transparent 50%);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --cubic: ease-out;
+  }
+}

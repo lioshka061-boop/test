@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeniePrompts — Zero-to-Bot Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/theme.css" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader">
+    <div class="preloader__orb"></div>
+    <p>Charging GeniePrompts...</p>
+  </div>
+
+  <div class="background-noise"></div>
+  <div class="particle-field" id="particle-field"></div>
+
+  <div class="viewport-shell">
+    <div data-include="components/header.html"></div>
+    <main id="main-content">
+      <div data-include="components/sections/hero.html"></div>
+      <div data-include="components/sections/for-whom.html"></div>
+      <div data-include="components/sections/problem.html"></div>
+      <div data-include="components/sections/how-it-works.html"></div>
+      <div data-include="components/sections/formats.html"></div>
+      <div data-include="components/sections/modes.html"></div>
+      <div data-include="components/sections/templates.html"></div>
+      <div data-include="components/sections/demo.html"></div>
+      <div data-include="components/sections/cases.html"></div>
+      <div data-include="components/sections/value.html"></div>
+      <div data-include="components/sections/pricing.html"></div>
+      <div data-include="components/sections/faq.html"></div>
+      <div data-include="components/sections/cta.html"></div>
+    </main>
+    <div data-include="components/footer.html"></div>
+  </div>
+
+  <div class="modal" id="demo-modal" aria-hidden="true" role="dialog" aria-label="Demo video">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog">
+      <button class="icon-button" data-modal-close aria-label="Закрити демо">×</button>
+      <video id="demo-video" src="assets/videos/demo.mp4" controls preload="metadata"></video>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
